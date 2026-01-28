@@ -1,0 +1,46 @@
+/* style_ar.css - Arabic / RTL overrides */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+
+
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+  background-color: #fff;
+}
+
+.navbar-nav {
+  flex-direction: row-reverse;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.navbar a.nav-link {
+  color: #5c3c25;
+  font-weight: 600;
+}
+
+.navbar a.nav-link:hover {
+  color: #c29b68;
+}
+
+.hero-text h1,
+.hero-text p {
+  text-align: center;
+}
+
+.about h2,
+.about p {
+  text-align: right;
+}
+
+.btn {
+  font-family: "Tajawal", sans-serif;
+}
+
+

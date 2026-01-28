@@ -1,0 +1,1097 @@
+/* ------------------------------
+   General body and fonts
+--------------------------------*/
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background for main content */
+    color: #768064; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Navbar professional chocolate style */
+.navbar {
+    background-color: #5e6f1b; /* Dark green */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+/* Logo size */
+.navbar .navbar-brand .navbar-logo {
+    height: 60px;   /* Slightly taller logo */
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+/* Remove default padding and align nicely */
+.navbar .navbar-brand {
+    padding-left: 0;
+    margin-left: 10px; /* Slight nudge left */
+}
+
+/* Nav links styling */
+.navbar .nav-link {
+    color: #f5f5dc !important; /* Beige links */
+    font-weight: 500;
+    margin-left: 1rem; /* Space between links */
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #dcd6b9 !important;
+}
+
+/* Hamburger for dark background */
+.navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    /* Stack menu items vertically */
+    .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    /* Remove link margin to make it centered */
+    .navbar .nav-link {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    /* Slightly reduce navbar padding */
+    .navbar .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+/* Navbar default */
+.navbar {
+    background-color: #768064 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Smooth transition */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+
+
+/* Shrink navbar on scroll */
+.navbar.scrolled {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* stronger shadow */
+}
+
+.navbar.scrolled .navbar-logo {
+    height: 50px; /* shrink logo slightly */
+}
+/* Logo transition */
+.navbar .navbar-brand .navbar-logo {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+/* Shrink logo slightly on scroll */
+.navbar.scrolled .navbar-brand .navbar-logo {
+    height: 50px;
+}
+
+
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+footer {
+    background-color: #768064;
+    color: #f5f5dc;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f5f5dc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Cards
+--------------------------------*/
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.card .card-title {
+    color: #768064;
+    font-weight: 600;
+}
+
+.card .card-text {
+    color: #768064;
+}
+
+/* Optional shadow for cards */
+.card.shadow-sm {
+    box-shadow: 0 2px 8px rgba(1, 50, 32, 0.15);
+}
+
+/* ------------------------------
+   Headings
+--------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    color: #768064;
+}
+
+/* ------------------------------
+   Links
+--------------------------------*/
+a {
+    color: #768064;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #768064;
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   Utility spacing (optional)
+--------------------------------*/
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+
+/* ------------------------------
+   Hero Section
+--------------------------------*/
+.hero-section {
+    background-image: url("/assets/images/background pp.jpeg");
+    color: #f5f5dc; /* Beige text */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Hero section heading */
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Hero section paragraph */
+.hero-section p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Shop Now button */
+.hero-section .btn-beige {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: #f5f5dc;
+    text-decoration: none;
+}
+
+.hero-section .btn-beige:hover {
+    background-color: #e0d9b5;
+    color: #768064;
+}
+
+/* Keep the same card style */
+.hero-img-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+  width: 300px;
+  height: 400px; 
+  margin-right: 1500px;
+}
+
+/* Small videos inside the cards */
+.hero-small-video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 400px;
+  transform: translate(-50%, -50%); /* rotated */
+  transform-origin: center center;
+  object-fit: cover; /* fill container while maintaining aspect */
+  transition: transform 0.3s ease;
+}
+
+
+/* Optional staggered top margins */
+.stagger-1 { margin-top: 20px; }
+.stagger-2 { margin-top: 0px; }
+.stagger-3 { margin-top: 30px; }
+.stagger-4 { margin-top: 10px; }
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .hero-small-video { height: 500px; }
+}
+
+@media (max-width: 1000px) {
+  .hero-small-video { height: 500px; }
+}
+
+
+/* Hero text over collage */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+}
+
+/* Beige text utility class */
+.text-beige {
+    color: #f5f5dc !important;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .hero-img-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-img-card img {
+        height: 150px;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/* About Section - YOUR ORIGINAL BACKGROUND */
+.about {
+  background-color: #f8f9f0;  /* YOUR ORIGINAL BACKGROUND */
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* YOUR ORIGINAL IMAGE STYLING - UNCHANGED */
+.about {
+  background-color: #faf9f4;
+}
+
+.about-img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-img-wrapper {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+}
+
+
+/* YOUR ORIGINAL BUTTON STYLING */
+.about .btn-beige {
+  padding: 0.5rem 1.8rem;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.about .btn-beige:hover {
+  background-color: #e0d9b5;
+  color: #768064;
+  transform: translateY(-2px);
+}
+
+/* YOUR ORIGINAL RESPONSIVE STYLING */
+@media (max-width: 991px) {
+  .about h2 {
+    font-size: 1.6rem;
+  }
+  .about p {
+    font-size: 0.9rem;
+  }
+  .about-img-wrapper {
+    max-width: 220px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .about h2 {
+    font-size: 1.4rem;
+  }
+  .about p {
+    font-size: 0.85rem;
+  }
+  .about-img-wrapper {
+    max-width: 180px;
+  }
+}
+
+
+
+/* Image wrapper with subtle tilt */
+.about-img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: rotate(-2deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-img-wrapper:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.about-img {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
+/* Decorative shapes behind text */
+.about-deco-shape {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.15;
+  background-color: #768064;
+}
+
+.about-deco-shape.shape-top {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.about-deco-shape.shape-bottom {
+  width: 150px;
+  height: 150px;
+  bottom: -30px;
+  left: 20px;
+}
+
+/* Layer text above shapes */
+.about-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
+  .about-img-wrapper {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+  .about-text p {
+    font-size: 0.95rem;
+  }
+  .about-img-wrapper {
+    margin-top: 30px;
+    transform: rotate(0deg);
+  }
+}
+
+/* Join Career Section */
+
+.join-team {
+    background-color: #e0d9b5; /* Beige */
+    color: #000000; /* Dark green text */
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.join-team h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.join-team h2:hover {
+    transform: translateY(-3px);
+    color: #0a4223; /* slightly darker green */
+}
+
+.join-team p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.join-team p:hover {
+    transform: translateY(-2px);
+}
+
+.join-team .btn-beige {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    background-color: #e6e624;
+    color: #768064;
+    border: 1px solid #768064;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.join-team .btn-beige:hover {
+    background-color: #768064;
+    color: #f5f5dc;
+    transform: scale(1.05); /* small grow effect */
+}
+
+/* Optional: subtle diagonal stripe effect behind the section */
+.join-team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 200%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.send-cv {
+  position: relative; /* Make the section a positioning context */
+  padding: 40px; /* Optional padding */
+}
+
+.send-cv .button {
+  position: absolute;
+  bottom: 20px; /* Distance from bottom */
+  right: 20px;  /* Distance from right */
+  background-color: #1a3d2f; /* Dark green base */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.send-cv .button {  /* Applies to both Get in Touch and Send Your CV */
+  background-color: #1a3d2f; /* Dark green base */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.send-cv .button:hover {
+  background: linear-gradient(45deg, #1a3d2f, #2e7d53); /* Gradient hover */
+  transform: translateY(-3px) scale(1.05); /* Pop-up effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Collage Images Hover About Us Page*/
+.collage-images img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.collage-images img:hover {
+    transform: scale(1.05);
+}
+
+.collage-images .row > div {
+    padding: 2px; /* small gap between images */
+}
+
+/*Online Order Button*/
+
+.btn-order-online {
+  background-color: #f5f5dc;
+  color: #768064;
+  border: 2px solid #768064;
+  font-size: 1.25rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.btn-order-online:hover {
+  background-color: #768064;
+  color: #f5f5dc;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(1, 50, 32, 0.6); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(1, 50, 32, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(1, 50, 32, 0); }
+}
+
+
+/*Scroll Up Button*/
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: #2e4a3a; /* dark green */
+  color: #f5e6d3; /* beige */
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  display: block; /* make it always visible for testing */
+  transition: all 0.3s ease;
+  margin-bottom: 60px;
+}
+
+#scrollTopBtn:hover {
+  background-color: #f5e6d3;
+  color: #2e4a3a;
+  transform: scale(1.1);
+}
+
+/*Marqee*/
+.marquee-overlap {
+  background: #0d2b0f;
+  color: #fff;
+  padding: 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 60px;
+  font-weight: 600;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.marquee-item .icon {
+  background: #2d6a4f;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* only half, because we duplicated */
+}
+
+
+.marquee-overlap {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #2e4a3a; /* keep your original background */
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff; /* your text color */
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.wm-logo {
+  height: 30px;          /* scales with text height */
+  opacity: 0.50;        /* subtle but visible */
+  margin: 0 20px;       /* spacing around logos */
+  object-fit: contain;  /* keeps full logo visible */
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* Prevent older/global rules from accidentally painting elsewhere */
+.marquee-overlap * { background: transparent; }
+
+/* Continuous animation (we duplicate content and translate -50%) */
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .marquee-item { margin: 0 24px; font-size: 14px; }
+  .hero-section { min-height: 50vh; }
+}
+
+
+/* Button wrapper */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff; /* WhatsApp green background behind your logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  margin-bottom: 60px;
+}
+
+/* Your logo */
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* The "Chat with us" bubble */
+.whatsapp-float .chat-text {
+  position: absolute;
+  right: 70px; /* spacing from button */
+  bottom: 15px;
+  background: #ffffff;
+  color: #333;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: fade-in animation for text */
+.whatsapp-float .chat-text {
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
+/* ===============================
+   Contact Us Section
+================================= */
+.contact-us {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff ; /* Keep your theme background */
+    color: var(--text-dark);
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    color: var(--primary-brown);
+    margin-bottom: 40px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-cards .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 25px 30px;
+    flex: 1 1 200px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.contact-cards .card span {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--primary-brown);
+}
+
+.contact-cards .card a {
+    color: var(--primary-brown);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-cards .card a:hover {
+    color: var(--gold);
+}
+
+.contact-cards .card p {
+    color: var(--secondary-brown);
+    margin: 0;
+}
+
+.button {
+    background-color: var(--primary-brown);
+    color: var(--text-light);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* ===============================
+   Responsive
+================================= */
+@media (max-width: 768px) {
+    .contact-cards {
+        gap: 15px;
+    }
+
+    .contact-cards .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact-us h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* General card styling */
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Email smaller font */
+.contact-cards .card a.email {
+  font-size: 0.9em; /* smaller than default */
+  display: inline-block;
+  margin-top: 5px;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.contact-us .button {
+  background-color: #1a3d2f; /* Dark green base */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .button:hover {
+  background: linear-gradient(45deg, #1a3d2f, #2e7d53); /* Gradient on hover */
+  transform: translateY(-3px) scale(1.05); /* Slight pop effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===============================
+   Media Queries
+================================= */
+@media (max-width: 768px) {
+    .join-team h2,
+
+
+    .join-team p,
+
+    .button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+
+/* --- Base Reset --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #0b2f23;
+  background-color: #fff;
+}
+
+/* --- ABOUT HERO --- */
+/* GENERAL STYLES */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background-color: #f9f6f2;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ABOUT HERO */
+.about-hero {
+  background-color: #768064;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* STORY SECTION */
+.story-section {
+  background-color: #fef6eb;
+  padding: 80px 0;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.story-image img {
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.story-text {
+  max-width: 600px;
+}
+
+.story-text h2 {
+  font-size: 1.8rem;
+  color: #768064;
+  margin-bottom: 15px;
+}
+
+/* VISION SECTION */
+.vision-section {
+  background-color: #768064;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.vision-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.vision-section p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.9;
+}
+
+.vision-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.vision-card {
+  background-color: #014a30;
+  border-radius: 15px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.vision-card h3 {
+  color: #f4dcb4;
+  margin-bottom: 10px;
+}
+
+.vision-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.9;
+}
+
+admin-btn {
+  display: inline-block;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.admin-btn:hover {
+  background-color: #388E3C; /* Darker green */
+}
+
+
+
+
