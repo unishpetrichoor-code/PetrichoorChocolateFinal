@@ -16,33 +16,35 @@ include __DIR__ . '/includes/head.php';
 <?php include __DIR__ . '/includes/header.php'; ?>
 
 <!-- Hero Section -->
+<!-- Hero Section -->
 <section id="home" class="hero-section py-5 position-relative">
   <div class="hero-overlay">
-    
+    <!-- optional overlay content -->
   </div>
   <div class="container position-relative">
 
-  
-      
-      <!-- Video 1 -->
-      <div class="col-md-2 col-6">
-        <div class="hero-img-card" style="margin-left: 400px">
+    <div class="row justify-content-center align-items-center">
+
+      <!-- Video -->
+      <div class="col-md-6 col-10"> <!-- wider column for bigger video -->
+        <div class="hero-img-card mx-auto">
           <video class="hero-small-video" autoplay muted loop playsinline>
             <source src="/assets/videos/Ramadan Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
-      <!-- Video 2 -->
 
     </div>
- 
 
-  <!-- Hero Text -->
-  <div class="hero-text text-center mt-4">
-    <p class="lead text-beige" style="font-family: sans-serif;">Unspoiled Sensation</p>
-    <a class="btn btn-order-online btn-lg mt-3" href="https://petrichoorchocolate.com/odine/">Order Online</a>
+    <!-- Hero Text -->
+    <div class="hero-text text-center mt-4">
+      <p class="lead text-beige" style="font-family: sans-serif;">Unspoiled Sensation</p>
+      <a class="btn btn-order-online btn-lg mt-3" href="https://petrichoorchocolate.com/odine/">Order Online</a>
+    </div>
   </div>
 </section>
+
 
 
 <!-- Add this in the <head> of your HTML to load premium fonts -->
@@ -142,7 +144,7 @@ include __DIR__ . '/includes/head.php';
       <div class="col-lg-5 col-md-12">
         <div class="about-img-wrapper" style="display: flex; justify-content: flex-end;">
           <img
-            src="/assets/images/premiumbox.jpg"
+            src="/assets/images/pp.jpg"
             alt="Petrichor Chocolate"
             class="about-img img-fluid"
             style="
