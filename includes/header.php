@@ -1,5 +1,12 @@
+<?php
+// Detect the current page to handle language switching
+$currentPage = basename($_SERVER['PHP_SELF']);
+
+// Define Arabic mode
+$isArabic = in_array($currentPage, ['index-ar.php', 'careers-ar.php', 'contact-ar.php']);
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= $isArabic ? 'ar' : 'en' ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +18,12 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body <?= $isArabic ? 'dir="rtl" lang="ar"' : '' ?>>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
   <div class="container-fluid px-4">
     <!-- Logo -->
-    <a class="navbar-brand" href="/index.php">
+    <a class="navbar-brand" href="<?= $isArabic ? '/index-ar.php' : '/index.php' ?>">
       <img src="/assets/images/logo.png" alt="Petrichoor Chocolate" class="navbar-logo" style="height:40px;">
     </a>
 
@@ -29,12 +36,32 @@
     <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/index.php">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/careers.php">Careers</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact.php">Contact</a></li>
-  
 
+        <li class="nav-item">
+          <a class="nav-link" href="<?= $isArabic ? '/index-ar.php' : '/index.php' ?>">
+            <?= $isArabic ? 'الرئيسية' : 'Home' ?>
+          </a>
+        </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="<?= $isArabic ? '/careers-ar.php' : '/careers.php' ?>">
+            <?= $isArabic ? 'إنضم لفريقنا' : 'Careers' ?>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="<?= $isArabic ? '/contact-ar.php' : '/contact.php' ?>">
+            <?= $isArabic ? 'تواصل معنا' : 'Contact' ?>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="<?= $isArabic ? '/index.php' : '/index-ar.php' ?>">
+            <?= $isArabic ? 'English' : 'عربي' ?>
+          </a>
+        </li>
+
+      </ul>
     </div>
   </div>
 </nav>
@@ -44,6 +71,3 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>

@@ -1,277 +1,269 @@
 <?php
-include __DIR__ . '/includes/head-ar.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <body>
-<?php include __DIR__ . '/includes/header-ar.php'; ?>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section py-5 position-relative">
-
-  <!-- Overlay -->
-  <div class="hero-overlay"></div>
-
-  <div class="container position-relative">
-    <div class="row g-3 justify-content-center align-items-end">
-
-      <!-- Videos -->
-      <div class="col-md-2 col-6">
-        <div class="hero-img-card" style="margin-top: 20px;">
-          <video class="hero-small-video" autoplay muted loop playsinline>
-            <source src="/petrichoor/assets/videos/121212.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-6">
-        <div class="hero-img-card" style="margin-top: 0px;">
-          <video class="hero-small-video" autoplay muted loop playsinline>
-            <source src="/petrichoor/assets/videos/323232.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-6">
-        <div class="hero-img-card" style="margin-top: 30px;">
-          <video class="hero-small-video" autoplay muted loop playsinline>
-            <source src="/petrichoor/assets/videos/343434.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="col-md-2 col-6">
-        <div class="hero-img-card" style="margin-top: 10px;">
-          <video class="hero-small-video" autoplay muted loop playsinline>
-            <source src="/petrichoor/assets/videos/4545454545.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Hero Text -->
-  <div class="hero-text text-center mt-4">
-    <h1 class="display-4 text-beige">شوكولاتة مصنوعة يدويًا بكل حب</h1>
-    <p class="lead text-beige">شوكولاتة فاخرة مصنوعة من أجود أنواع الكاكاو.</p>
-    <a class="btn btn-order-online btn-lg mt-3" href="https://petrichoorchocolate.com/odine/">اطلب الآن</a>
-  </div>
-</section>
-
-<!-- Marquee -->
-<div class="marquee-overlap">
-  <div class="marquee-track">
-    <div class="marquee-content">
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍫</span><span>شوكولاتة بلجيكية أصلية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🥮</span><span>شوكولاتة فاخرة مصنوعة يدوياً</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍃</span><span>طازجة</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌿</span><span>عضوية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🏡</span><span>محضّرة في المنزل</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌱</span><span>خالية من المكونات الصناعية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🚚</span><span>توصيل</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌾</span><span>خالية من الغلوتين</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍬</span><span>خالٍ من السكر</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🥗</span><span>كيتو ونباتي</span>
-      </div>
-    </div>
-
-    <!-- duplicate content for seamless loop -->
-    <div class="marquee-content">
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍫</span><span>شوكولاتة بلجيكية أصلية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🥮</span><span>شوكولاتة فاخرة مصنوعة يدوياً</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍃</span><span>طازجة</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌿</span><span>عضوية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🏡</span><span>محضّرة في المنزل</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌱</span><span>خالية من المكونات الصناعية</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🚚</span><span>توصيل</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🌾</span><span>خالية من الغلوتين</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🍬</span><span>خالٍ من السكر</span>
-      </div>
-      <div class="marquee-item">
-        <img src="/petrichoor/assets/images/smalllogo.png" class="wm-logo" alt="الشعار">
-        <span class="icon">🥗</span><span>كيتو ونباتي</span>
-      </div>
-    </div>
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <img src="/assets/images/smalllogo.png" alt="Petrichoor Logo" class="loader-logo">
   </div>
 </div>
 
-<!-- About -->
-<section id="about" class="about py-4">
-  <div class="container">
-    <div class="row align-items-center">
+<!-- Main Content -->
+<div id="main-content" style="display:none;">
+<?php include __DIR__ . '/includes/header.php'; ?>
 
-      <!-- Text -->
-      <div class="col-md-7">
-        <div class="about-content">
-          <h2 class="about-heading mb-3">عن <span class="highlight">بتريشور شوكولاتة</span></h2>
-          <p class="about-text intro-text">
-            قصة من <span class="emphasis">الشغف والأحلام والفن</span>...
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section id="home" class="hero-section py-5 position-relative">
+  <div class="hero-overlay">
+    <!-- optional overlay content -->
+  </div>
+  <div class="container position-relative">
+
+    <div class="row justify-content-center align-items-center">
+
+      <!-- Video -->
+      <div class="col-md-6 col-10"> <!-- wider column for bigger video -->
+        <div class="hero-img-card mx-auto">
+          <video class="hero-small-video" autoplay muted loop playsinline>
+            <source src="/assets/videos/Ramadan Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hero Text -->
+    <div class="hero-text text-center mt-4">
+      <p class="lead text-beige" style="font-family: sans-serif;"><p>حيـن يتحول الإحساس إلى مذاق</p></p>
+      <a class="btn btn-order-online btn-lg mt-3" href="https://petrichoorchocolate.com/odine/">للطـلب </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Add this in the <head> of your HTML to load premium fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- About Section -->
+<section id="about" class="about py-4" style="background-color: #faf9f4;">
+  <div dir="rtl" lang="ar">
+    
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+
+      <!-- Text Content -->
+      <div class="col-lg-7 col-md-12">
+        <div class="about-content" style="max-width: 620px;">
+          <h2 class="about-heading mb-3" style="
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #2f3e2f;
+            position: relative;
+            ">
+        قصة  <span class="highlight">بيتركور شوكليت </span>
+          </h2>
+
+          <p class="about-text intro-text" style="
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            font-size: 0.98rem;
+            color: #5e6a5e;
+            line-height: 1.75;
+            letter-spacing: 0.2px;
+            margin-bottom: 1.2rem;
+            ">
+           <span class="emphasis" style="font-weight: 500; color: #3b4a3b;">
+                              ...منذ اللحظة التي يُنطق فيها اسم «بيتركور»، يسبق الإحساسُ المعنى
+                وتنساب شاعريّة هادئة تثير الفضول وتسأل برقيّ:
+                كيف يمكن لاسمٍ أن يُترجَم إلى مذاق؟
+                وكيف يصبح الإحساس نكهة؟
+            </span>
+
           </p>
-          <p class="about-text main-story">
-            في عام 2020، عندما تباطأ العالم، قررت رائدة أعمال شابة ذات <span class="emphasis">شغف عميق بالشوكولاتة</span> أن تحول <span class="emphasis">أحلامها إلى واقع</span>.
+
+          <p class="about-text main-story" style="
+            font-family: 'Inter', sans-serif;
+            font-size: 0.98rem;
+            color: #6b7568;
+            line-height: 1.75;
+            letter-spacing: 0.2px;
+            margin-top: 1.6rem;
+            margin-bottom: 1.2rem;
+            ">
+            <span class="emphasis" style="font-weight: 500; color: #3b4a3b;">
+
+                          في سن السابعة عشرة، كانت هناك فتاة هادئة، خجولة كبحرٍ ساكن،
+                          تُخفي تحت سطحها عالَمًا من الألوان والأحلام.
+
+                          وحين شُخِّصت بداء السكري من النوع الثاني،
+                          قيل لها أن تودّع السكر… وربما تودّع معه متعة الحلو
+
+            </span>
+            <span class="emphasis" style="font-weight: 500; color: #3b4a3b;">
+                                            
+                              لكن ما بدا يومًا نهاية، كان في الحقيقة بداية
+
+                              بداية رسالة، لا مجرّد بديل 
+
+                              رسالة وُلدت من التحدّي،
+                              وتجسّدت في ابتكار شوكليت خالية من السكر المضاف،
+                              تمنح الجميع — ولا سيما مرضى السكري —
+                              لذّة صادقة، بلا خوف،
+                              وفخامة حقيقية، بلا تنازل.
+
+                              بدأت الحكاية في غرفة صغيرة داخل منزل،
+                              ومن شغفٍ بسيط نما حلم كبير،
+                              تحوّل مع الوقت إلى رؤية،
+                              تقودها القناعة، ويغذّيها الإصرار،
+                              وتستلهم روح دولة الإمارات , حيث لا مكان للمستحيل 
+                              وعلى خُطى إرث الشيخ زايد، طيّب الله  ثراه 
+                              يصبح الطموح أسلوب حياة.. 
+
+            </span>
           </p>
-          <p class="about-text founding-story">
-            بقلب يؤمن بأن <span class="emphasis">لا شيء مستحيل</span> وعين تهتم بأدق التفاصيل، أسست <span class="brand-name">بتريشور شوكولاتة</span> من مطبخ منزلها.
+
+          <p class="about-text founding-story" style="
+            font-family: 'Inter', sans-serif;
+            font-size: 0.98rem;
+            color: #6b7568;
+            line-height: 1.75;
+            letter-spacing: 0.2px;
+            margin-top: 1.6rem;
+            margin-bottom: 1.2rem;
+            ">
+            <span class="emphasis" style="font-weight: 500; color: #3b4a3b;">
+                                      في بيتركور، نحن لا نصنع الشوكليت فحسب،
+                        بل ننسج تجربة متكاملة،
+                        تُروى بالتفاصيل،
+                        وتُقدَّم بذوق،
+                        وترتقي بأسلوب الحياة.
+            </span>
+            <br><br>
+            <span class="brand-name" style="
+              font-family: 'Playfair Display', serif;
+              font-size: 1.05rem;
+              font-weight: 500;
+              color: #2f3e2f;
+              letter-spacing: 0.4px;
+              display: inline-block;
+              ">
+                            متجذّرة في إرثٍ أصيل،
+              ومعبَّر عنها برؤية عصرية،
+              نحتفي بكل ما هو مختلف، نادر،
+              واستثنائي بحق.
+
+              بيتركور…
+              حين يتحوّل الإحساس إلى مذاق.
+            </span>
           </p>
-          <p class="about-text philosophy">
-            اليوم، لا تزال كل قطعة <span class="emphasis">تصنع يدويًا بحب ودقة واهتمام بالكمال</span>، لتصبح كل قطعة تجربة فاخرة حقيقية.
+
+          <p class="about-text philosophy" style="
+            font-family: 'Inter', sans-serif;
+            font-size: 0.98rem;
+            color: #6b7568;
+            line-height: 1.75;
+            letter-spacing: 0.2px;
+            ">
+            <span class="emphasis"></span>
           </p>
         </div>
-        <a class="btn btn-beige mt-2" href="/petrichoor/about-ar.php">اعرف المزيد</a>
       </div>
 
       <!-- Image -->
-      <div class="col-md-5">
-        <div class="about-img-wrapper">
-          <img src="/petrichoor/assets/images/Royal Collection.jpg" alt="بتريشور شوكولاتة" class="about-img">
+      <div class="col-lg-5 col-md-12">
+        <div class="about-img-wrapper" style="display: flex; justify-content: flex-end;">
+          <img
+            src="/assets/images/pp.jpg"
+            alt="Petrichor Chocolate"
+            class="about-img img-fluid"
+            style="
+              max-width: 420px;
+              width: 100%;
+              border-radius: 16px;
+              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            "
+          >
         </div>
       </div>
 
     </div>
   </div>
+  </div>
 </section>
 
-<!-- Products Section (Arabic, Responsive) -->
+
+<!-- Products Section -->
+<!-- Collections / Featured Products Section -->
 <section id="products" class="featured-products py-5">
-  <div class="container text-center" dir="rtl">
-    <h2 class="text-center mb-4">منتجاتنا</h2>
+  <div class="container text-center">
+    <h2 class="text-center mb-4">مختارات</h2>
     <div class="d-flex flex-wrap justify-content-center" style="column-gap: 8px; row-gap: 20px;">
+
       <?php 
       include 'includes/db_connect.php';
-
       $query = "SELECT * FROM dashboard_product ORDER BY id ASC";
       $result = $mysqli->query($query);
 
-      if($result->num_rows > 0):
-          while($prod = $result->fetch_assoc()): ?>
-            <div style="flex: 0 0 calc(20% - 8px);">
-              <div class="card shadow-sm h-100">
-                <img src="/petrichoor/assets/images/<?= $prod['image'] ?>" 
-                     class="card-img-top" 
-                     alt="<?= $prod['title_ar'] ?>" 
-                     style="object-fit: cover; width: 100%; height: 180px;">
-                <div class="card-body d-flex flex-column justify-content-between text-center">
-                  <h5 class="card-title"><?= $prod['title_ar'] ?></h5>
-                  <a href="/petrichoor/products-ar.php?id=<?= $prod['id'] ?>" class="btn btn-beige mt-auto">عرض</a>
-                </div>
-              </div>
+      if ($result->num_rows > 0):
+          while ($prod = $result->fetch_assoc()):
+            $title_ar = $prod['title_ar']; // Arabic title
+      ?>
+
+        <div style="flex: 0 0 calc(20% - 8px);">
+          <div class="card shadow-sm h-100">
+            <img src="/assets/images/<?= htmlspecialchars($prod['image']) ?>" 
+                 class="card-img-top"
+                 alt="<?= htmlspecialchars($title_ar) ?>"
+                 style="object-fit: cover; width: 100%; height: 180px;">
+            <div class="card-body d-flex flex-column justify-content-between text-center">
+              <h5 class="card-title"><?= htmlspecialchars($title_ar) ?></h5>
+              <a href="https://petrichoorchocolate.com/odine/" class="btn btn-beige mt-auto">عرض</a>
             </div>
-      <?php 
-          endwhile;
-      else: ?>
+          </div>
+        </div>
+
+      <?php endwhile; else: ?>
         <p class="text-center">لا توجد منتجات متاحة.</p>
       <?php endif; ?>
+
     </div>
   </div>
 </section>
 
-<!-- Responsive CSS -->
-<style>
-@media (max-width: 1200px) {
-  #products .d-flex > div {
-    flex: 1 1 calc(25% - 8px);
-    max-width: calc(25% - 8px);
-  }
-}
-@media (max-width: 992px) {
-  #products .d-flex > div {
-    flex: 1 1 calc(33.33% - 8px);
-    max-width: calc(33.33% - 8px);
-  }
-}
-@media (max-width: 768px) {
-  #products .d-flex > div {
-    flex: 1 1 calc(50% - 8px);
-    max-width: calc(50% - 8px);
-  }
-}
-@media (max-width: 576px) {
-  #products .d-flex > div {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-</style>
 
-
-
-<!-- Careers -->
+<!-- Join Our Team Section -->
 <section id="careers" class="join-team py-5" style="background-color:#F9F7DC;">
+  <div dir="rtl" lang="ar">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 text-md-start text-center mb-3 mb-md-0">
-        <h2 class="display-5 fw-bold text-theme">انضم إلى فريقنا</h2>
+        <h2 class="display-5 fw-bold text-theme">إنضم لفريقنا </h2>
         <p class="lead text-dark">
-          شغوف بالشوكولاتة؟ 🍫<br>
-          انضم إلى عائلتنا وشارك في صناعة لحظات لا تُنسى لمحبي الشوكولاتة في كل مكان.
+          شغفك بالشوكليت يبدأ من هنا 🍫! <br>
+          نحن نبحث عن مواهب تؤمن بالجودة وتحب الإبداع.
+انضم إلى فريقنا وكن جزءًا من تقديم تجارب مميزة لعشّاق الشوكليت حول العالم.
         </p>
       </div>
       <div class="send-cv">
-        <a class="button" href="/petrichoor/contact-ar.php">أرسل سيرتك الذاتية</a>
+        <a class="button" href="/contact.php">أرسل لنا سيرتك الذاتية</a>
       </div>
     </div>
   </div>
+  </div>
+
 </section>
 
-
 <!-- Contact Us Section -->
-<section class="contact-us">
-  <h2>Contact Us</h2>
+<section class="contact-us py-5">
+  <h2>تواصل معنا </h2>
   <div class="contact-cards">
     <div class="card">
       <i class="bi bi-envelope-fill"></i>
@@ -279,110 +271,78 @@ include __DIR__ . '/includes/head-ar.php';
     </div>
     <div class="card">
       <i class="bi bi-telephone-fill"></i>
-      <a href="tel:+97152257993">+971 522 257 993</a>
+      <a href="tel:+97152257993">+971 58 679 9389</a>
     </div>
     <div class="card">
       <i class="bi bi-geo-alt-fill"></i>
-      <a href="/petrichoor/contact.php">Ajman, Al Jerf 2, UAE</a>
+      <a href="/contact.php">عجمان، الجرف 2، الإمارات العربية المتحدة</a>
     </div>
     <div class="card">
       <i class="bi bi-instagram"></i>
       <a href="https://www.instagram.com/petrichoor.ae/" target="_blank">@petrichoor.ae</a>
     </div>
   </div>
-  <a class="button" href="/petrichoor/contact.php">Contact Us</a>
+  <a class="button" href="/contact.php">تواصل معنا </a>
 </section>
 
-<style>
-.contact-us {
-  text-align: center;
-  padding: 50px 0;
+<!-- WhatsApp Chat Widget -->
+<a href="https://wa.me/971586799389" class="whatsapp-float" target="_blank">
+  <img src="/assets/images/hl.png" alt="Chat with us">
+  <span class="chat-text">تحدث مع خبير الهدايا </span>
+</a>
+<script>
+function hideGetButton(){
+  const el = document.querySelector('.wh-widget-send-button') || document.querySelector('[id^="getbutton"]');
+  if(el) el.style.display = 'none';
 }
+hideGetButton();
+setTimeout(hideGetButton,1000);
+setTimeout(hideGetButton,3000);
+</script>
 
-.contact-cards {
+<!-- Footer -->
+<?php include __DIR__.'/includes/footer.php'; ?>
+</div> <!-- end main-content -->
+
+<!-- Loader CSS -->
+<style>
+#loader {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg,#8B4513,#A0522D);
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
 }
-
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 220px;
+.loader-logo {
+  width: 120px;
+  animation: rotate 2s linear infinite;
+  margin-bottom: 20px;
 }
-
-.card i {
-  font-size: 2rem;
-  color: #436b4b; /* Your brand green */
-  display: block;
-  margin-bottom: 10px;
+.loader-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFD700;
 }
-
-.card a {
-  text-decoration: none;
-  color: #333;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 25px;
-  background: #436b4b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background: #35573c;
-}
+@keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 </style>
 
-
-<!-- Hide the getbutton widget if present -->
+<!-- Loader JS -->
 <script>
-  // hide any getbutton widget after it loads
-  function hideGetButton(){
-    const el = document.querySelector('.wh-widget-send-button') || document.querySelector('[id^="getbutton"]');
-    if(el) el.style.display = 'none';
-  }
-  // try a few times in case it loads later
-  hideGetButton();
-  setTimeout(hideGetButton, 1000);
-  setTimeout(hideGetButton, 3000);
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  const mainContent = document.getElementById("main-content");
+  // Keep loader for 2.5s then fade out
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.8s ease-out";
+    setTimeout(() => {
+      loader.style.display = "none";
+      mainContent.style.display = "block";
+    }, 800);
+  }, 1000); // loader visible for 2.5s
+});
 </script>
-
-<!-- Hero Video Playlist -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const video = document.getElementById("heroVideo");
-
-    // Add your videos here
-    const playlist = [
-      "/petrichoor/assets/videos/323232.mp4",
-      "/petrichoor/assets/videos/343434.mp4",
-      "/petrichoor/assets/videos/767676.mp4"
-    ];
-
-    let current = 0;
-
-    video.addEventListener("ended", function() {
-      current = (current + 1) % playlist.length;
-      video.src = playlist[current];
-      video.play();
-    });
-  });
-</script>
-
-
-<!-- WhatsApp -->
-<a href="https://wa.me/971522257993" class="whatsapp-float" target="_blank">
-  <img src="/petrichoor/assets/images/hl.png" alt="تحدث معنا">
-  <span class="chat-text">تحدث معنا</span>
-</a>
-
-<?php include __DIR__.'/includes/footer-ar.php'; ?>

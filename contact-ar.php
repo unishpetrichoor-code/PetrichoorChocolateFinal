@@ -6,8 +6,8 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-include __DIR__ . '/includes/head-ar.php';
-include __DIR__ . '/includes/header-ar.php';
+include __DIR__ . '/includes/head.php';
+include __DIR__ . '/includes/header.php';
 
 $successMessage = '';
 $errorMessage = '';

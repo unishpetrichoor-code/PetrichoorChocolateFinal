@@ -1,9 +1,9 @@
 <?php
 // ------------------- Includes -------------------
 include __DIR__ . '/includes/db_connect.php';
-include __DIR__ . '/includes/head-ar.php';
+include __DIR__ . '/includes/head.php';
 $lang = 'ar'; // set language for header
-include __DIR__ . '/includes/header-ar.php';
+include __DIR__ . '/includes/header.php';
 
 // ------------------- PHPMailer Setup -------------------
 require __DIR__ . '/PHPMailer/src/Exception.php';
