@@ -209,7 +209,7 @@ include __DIR__ . '/includes/head.php';
 
       <?php 
       include 'includes/db_connect.php';
-      $query = "SELECT * FROM dashboard_product ORDER BY id ASC";
+      $query = "SELECT * FROM dashboard_product ORDER BY sort_order ASC";
       $result = $mysqli->query($query);
 
       if ($result->num_rows > 0):

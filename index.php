@@ -169,7 +169,7 @@ include __DIR__ . '/includes/head.php';
     <div class="d-flex flex-wrap justify-content-center" style="column-gap: 8px; row-gap: 20px;">
       <?php 
       include 'includes/db_connect.php';
-      $query = "SELECT * FROM dashboard_product ORDER BY id ASC";
+      $query = "SELECT * FROM dashboard_product ORDER BY sort_order ASC";
       $result = $mysqli->query($query);
       if($result->num_rows > 0):
           while($prod = $result->fetch_assoc()): ?>
@@ -238,7 +238,7 @@ include __DIR__ . '/includes/head.php';
 <!-- WhatsApp Chat Widget -->
 <a href="https://wa.me/971586799389" class="whatsapp-float" target="_blank">
   <img src="/assets/images/hl.png" alt="Chat with us">
-  <span class="chat-text">Chat with us</span>
+  <span class="chat-text">Talk to the gift expert</span>
 </a>
 <script>
 function hideGetButton(){
