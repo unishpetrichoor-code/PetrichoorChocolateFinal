@@ -25,4 +25,7 @@ $cssFile = ($_SESSION['lang'] === 'ar') ? 'style_ar.css' : 'style.css';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petrichoor Chocolate</title>
 
+  <link rel="icon" type="image/png" href="assets/images/fav.png">
+
+
 </head>
